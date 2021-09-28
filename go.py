@@ -1,3 +1,4 @@
+
 import os
 import tinvest
 import locale
@@ -15,6 +16,7 @@ BROKER_ACCOUNT_ID = os.getenv('TINKOFF_BROKER_ACCOUNT')
 BROKER_ACCOUNT_STARTED_AT = datetime(2020, 8, 18, 0, 0, 0)
 
 api=TinkoffApi(api_token=TOKEN, broker_account_id=BROKER_ACCOUNT_ID)
+
 usd_course = api.get_usd_course()
 
 
